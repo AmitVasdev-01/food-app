@@ -15,7 +15,7 @@ export class UserService {
 	}
 
   loginUser(credentials: { email: string; password: string }): Observable<any> {
-		return this.http.post(`http://192.168.1.69:8001/userservice/api/user/login`, credentials, { headers: this.getHeaders()});
+		return this.http.post(`http://192.168.1.17:8001/userservice/api/user/login`, credentials, { headers: this.getHeaders()});
 	}
 
   getHeaders() {
